@@ -49,9 +49,6 @@ header h1 {
     line-height: 1;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
 
 header nav {
     display: flex;
@@ -65,6 +62,7 @@ nav a {
     text-decoration: none;
     padding: 5px 10px;
     margin-right: 10px;
+    font-size: 1.4rem;
 }
 nav a:hover {
     background-size: 100% 100%;
@@ -77,9 +75,9 @@ nav a:last-child {
 /*hero*/
 
 .hero {
-    min-height: 30vh;
+    min-height: 50vh;
     background: var(--tertiary);
-    background-image: url("../images/#");
+    background-image: url("../images/gym.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -105,60 +103,115 @@ main {
 }
 
 .page-section {
-
+margin: 25px 0;
+padding: 10px 0;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-between;
 }
 
 .page-section > h2 {
-
+flex: 0 0 20%;
+text-align: right;
+padding-right: 15px;
+border-right: 4px solid gray;
+font-size: 4vw;
+line-height: 1.1;
 }
 
 .page-section > div {
+flex: 0 0 77%;
 
 }
 
 .page-section p {
-
+margin-bottom: 20px;
 }
 
 .flex-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.box-item {
+border: 5px solid blue;
+background-color: gray;
+color: black;
+min-height: 150px;
+max-height: 150px;
+flex-basis: calc(50% - 1em);
+display: flex;
+align-items: flex-end;
+padding: 0 0 20px 0;
+margin: 0.5em;
+text-decoration: none;
+background-size: 150%;
+transition: all 0.5s;
+font-size: 0.9rem;
+}
+
+.box-item:first-child {
+min-height: 400px;
+flex-basis: 100%;
 
 }
 
-.flex-item {
-
+.box-item:hover {
+background-color: aqua;
 }
 
-.flex-item:first-child {
-
+.box-item div {
+background-color: blue;
+padding: 8px 10px;
 }
 
-.flex-item:hover {
-
-}
-
-.flex-item div {
-
-}
-
-.flex-item h3 {
-
+.box-item h3 {
+font-size: 1.6rem;
 }
 
 .contact address {
-
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+height: 100%;
 }
 
 .contact address a {
-
+color: black;
+padding: 5px;
+text-decoration: none;
+font-size: 1.3rem;
+font-style: normal;
+display: inline-block;
+margin: 0 0.2rem 0.1rem;
 }
 
-.contact address a :hover {
+.contact address a:hover {
+background-size: 100% 88%;
+color: aqua;
 
 }
 
 .surf {
-    background-image: url("../images/#");
+    background-image: url("../images/lovecalc.jpg");
 }
+.led {
+    background-image: url("../images/party.jpg");
+}
+.calc {
+    background-image: url("../images/passwordgen.jpg");
+}
+.puzzle {
+    background-image: url("../images/quiz.jpg");
+}
+.run {
+    background-image: url("../images/commingsoon.jpg");
+}
+
 
 
 
